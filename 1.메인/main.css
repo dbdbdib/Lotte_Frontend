@@ -3,4 +3,64 @@
     height: 1569px;
     background: #FFFFFF;
     opacity: 1;
+    border: 1px solid blue;
+}
+
+.header {
+    border: 1px solid black;
+}
+.logo {
+    position: relative;
+    top: 66px;
+    left: 904px;
+    width: 113px;
+    height: 113px;
+    border: 1px solid red;
+    opacity: 1;
+    display: inline-block;
+}
+
+.sign-in {
+    position: absolute;
+    top: 104px;
+    left: 1584px;
+    width: 90px;
+    height: 36px;
+    /* border: 1px solid pink; */
+    font: normal normal normal 20px/55px Apple SD GOthic Neo;
+
+    text-align: left;
+    display: inline-block;
+}
+
+.login-out {
+    position: absolute;
+    top: 104px;
+    left: 1679px;
+    width: 90px;
+    height: 36px;
+    /* border: 1px solid green; */
+    font: normal normal normal 20px/55px Apple SD Gothic Neo;
+    display: inline-block;
+}
+
+.select-box {
+    top: 274px;
+    left: 89px;
+    width: 840px;
+    height: 478px;
+    display: inline-block;
+    border: 1px solid orange;
+}
+
+.content-box {
+    position: absolute;
+    top: 274px;
+    left: 89px;
+}
+
+#footer {
+    width: 1920px;
+    height: 259px;
+    border: 1px solid yellowgreen;
 }
