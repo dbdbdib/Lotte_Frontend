@@ -1,9 +1,9 @@
 .background {
+    margin: 0 auto;
     width: 1920px;
-    height: 1569px;
     background: #FFFFFF;
     opacity: 1;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 /* 헤더 부분 */
@@ -17,12 +17,11 @@
 }
 
 .sign-in {
-    position: absolute;
-    top: 104px;
-    left: 1584px;
+    position: relative;
+    bottom: 56px;
+    left: 567px;
     width: 90px;
     height: 36px;
-    /* border: 1px solid pink; */
     font: normal normal normal 20px/55px Apple SD GOthic Neo;
 
     text-align: left;
@@ -30,22 +29,20 @@
 }
 
 .login-out {
-    position: absolute;
-    top: 104px;
-    left: 1679px;
+    position: relative;
+    bottom: 56px;
+    left: 576px;
     width: 90px;
     height: 36px;
-    /* border: 1px solid green; */
     font: normal normal normal 20px/55px Apple SD Gothic Neo;
     display: inline-block;
 }
 
-
+/* 계열 선택하기 */
 .content-box {
-    /* position: relative; */
     margin-top: 94.5px;
     margin-left: 88.5px;
-    border: 1px solid mediumpurple;
+    /* border: 1px solid mediumpurple; */
 }
 
 .select-box {
@@ -58,97 +55,54 @@
     border: 1px solid #707070;
     border-radius: 74px;
     opacity: 1;
+
+    /* 임시 방편 */
+    text-align: center;
+    font-size: 55px;
 }
 
+/* 오른쪽 박스 */
 #select-trans, #select-ser {
     margin-left: 54px;
 }
-
+/* 밑의 박스 */
 .bottom-box {
     margin-top: 41px;
 }
+
+/* .box-text {
+    margin: 100px 0px;
+} */
 
 .logo-box {
     width: 246px;
     height: 246px;
     border: 1px solid red;
-    position: relative;
+    /* position: relative;
     top: 25%;
     left: 49.46px;
-    background-color: #1D1D1D72;
+    background-color: #1D1D1D72; */
 }
 
 .logo2 {
-    position: relative;
+    /* position: relative;
     top: 25%;
-    margin-left: 71.04px;
+    margin-left: 71.04px; */
     width: 103px;
     height: 109px;
     border: 1px solid pink;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
-.top-box {
-    border: 1px solid green;
-}
 
-/* .box-text {
-    margin-left: 304.5px;
-    text-align: left;
-    font: normal normal normal 55px/67px Apple SD Gothic Neo;
-} */
-/* .logo-box-wrap {
-    border: 1px solid white;
-    margin-top: 123.5px;
-    margin-left: 49.46px;
-    width: 246px;
-    height: 246px;
-} */
-/* .logo-box {
-    margin-top: 35px;
-    margin-left: 35px;
-    width: 174px;
-    height: 174px;
-    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
-    background: #1D1D1D72 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
-    border-radius: 45px;
-    opacity: 1;
-
-} */
-
-/* .logo2 {
-    position: absolute;
-    top: 465px;
-    left: 209px;
-    width: 103px;
-    height: 109px;
-} */
-
-    /* top: 487px;
-    left: 393px; */
-/* .box-text {
-    border: 1px solid yellowgreen;
-    width: 400px;
-    height: 67px;
-    text-align: left;
-    font: normal normal normal 55px/67px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
-} */
-
+/*  푸터 부분 */
 #footer {
     margin-top: 39.5px;
-    width: 1920px;
+    width: 100%;
     height: 259px;
-    border: 1px solid yellowgreen;
     background: #55585A 0% 0% no-repeat padding-box;
 }
 
-.box-text {
-    margin: 0 auto;
-}
 #footer-nav {
     height: 187px;
 }
@@ -159,13 +113,8 @@
 .footer-info-text {
     margin-top: 16px;
     margin-left: 50px;
-    margin-bottom: 16px;
     font-size: 20px;
     color: #FFFFFF;
     opacity: 1;
-}
-
-.top-box {
-    display: inline-block;
 }
 
