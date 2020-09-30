@@ -10,10 +10,9 @@
 
 /* 네비게이션 바 */
 .nav_bar {
-    width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 66px;
+    margin: 66px 45px 0;
 }
 
 .nav_bar>div {
