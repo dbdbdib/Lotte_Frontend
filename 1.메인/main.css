@@ -17,6 +17,7 @@
 }
 
 .sign-in {
+    cursor: pointer;
     position: relative;
     bottom: 56px;
     left: 567px;
@@ -29,6 +30,7 @@
 }
 
 .login-out {
+    cursor: pointer;
     position: relative;
     bottom: 56px;
     left: 576px;
@@ -46,6 +48,7 @@
 }
 
 .select-box {
+    cursor: pointer;
     width: 840px;
     height: 478px;
     display: inline-block;
@@ -74,6 +77,7 @@
     margin: 100px 0px;
 } */
 
+/* 요기부터 온도 올라감 킹받음 */
 .logo-box {
     width: 246px;
     height: 246px;
@@ -93,7 +97,7 @@
     border: 1px solid pink;
     /* display: inline-block; */
 }
-
+/* 요기까지 */
 
 /*  푸터 부분 */
 #footer {
