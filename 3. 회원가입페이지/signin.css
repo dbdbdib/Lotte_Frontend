@@ -1,0 +1,18 @@
+.background {
+    margin: 0 auto;
+    width: 1920px;
+    background: #FFFFFF;
+    opacity: 1;
+    /* border: 1px solid blue; */
+}
+.logo {
+    /*Position*/
+    margin-top: 66px;
+    margin-left: 904px;
+
+    /*Design*/
+    width: 113px;
+    height: 113px;
+    opacity: 1;
+    display: inline-block;
+}
