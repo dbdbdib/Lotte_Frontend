@@ -1,0 +1,107 @@
+.background {
+    margin: 0 auto;
+    width: 1920px;
+    background: #FFFFFF;
+    opacity: 1;
+    /* border: 1px solid blue; */
+}
+.logo {
+    /*Position*/
+    margin-top: 66px;
+    margin-left: 904px;
+
+    /*Design*/
+    width: 113px;
+    height: 113px;
+    opacity: 1;
+    display: inline-block;
+}
+.decoration{/*콜라보 표시해주는 부분인데ㅠㅠ 어떻게 손봐야할지 모르겠습니다ㅠㅠ*/
+    text-align: center;
+    font: normal normal normal 25px Apple SD Gothic Neo;
+    line-height: 3px;
+    letter-spacing: 0px;
+    color: #ACACAC;
+    margin-bottom: 100px;
+}
+
+.header{
+    /*Position*/
+    margin-top: 109.5px;
+    margin-left: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /*Design*/
+    width: 840px;
+    height: 895.19px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 5px 5px 5px #00000029;
+    border: 1px solid #707070;
+    border-radius: 46px;
+    opacity: 1;
+    /*엄...백그라운드에 아웃라인 넣어줘야 하는데 어떻게 하죠?...*/
+}
+.int-area {width: 400px;position: relative;}
+
+.int-area label{/*이부분이 개판인게, 텍스트를 입력하면 Id, PW 글자 위로 덧씌워집니다...ㅜㅜ*/
+    position: absolute; left:40px; top:30px;
+    /*Design*/
+    text-align: left;
+    font: normal normal normal 30px/55px Apple SD Gothic Neo;
+    letter-spacing: 0px;
+    color: #ACACAC;
+    opacity: 1;
+}
+
+.int-area input{
+    top: 675px;
+    left: 611px;
+    width: 679px;
+    height: 101px;
+    margin-bottom: 18px;
+
+    /*Design*/
+    background: #E8E8E8 0% 0% no-repeat padding-box;
+    border-radius: 74px;
+    opacity: 1;
+}
+
+.button-area button{/*'로그인'버튼 부분*/
+    margin-top:17px;
+    top: 931px;
+    left: 607px;
+    width: 679px;
+    height: 119px;
+
+    /*Design*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 26px;
+    opacity: 1;
+    font: normal normal normal 30px Apple SD Gothic Neo;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+
+}
+.caption{
+    top: 1077px;
+    left: 780px;
+    width: 334px;
+    height: 31px;
+    
+    /*Design*/
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ACACAC;
+    opacity: 1;
+
+}
+
+.caption{
+    margin-left: 240px;
+    margin-top:27.5px;
+
+}
