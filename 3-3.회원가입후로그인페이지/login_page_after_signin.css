@@ -1,0 +1,174 @@
+/* setting */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* size */
+    width: 100%;
+    /* design */
+    background: #FFFFFF;
+    /* position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+.header {
+    /* position */
+    margin-top: 66px;
+    margin-bottom: 85px;
+}
+
+.logo {
+    /* position */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: center;
+    /* size */
+    width: 113px;
+    height: 113px;
+}
+
+.team_introduction {
+    /* size */
+    width: 724px;
+    height: 92px;
+    /* position */
+    text-align: center;
+    /* design */
+    background: skyblue;
+}
+
+/* 회원가입 완료 안내 */
+.signin_complete {
+    /* size */
+    width: 745px;
+    /* position */
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+#signin_complete_line1 {
+    /* font */
+    font-size: 50px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#signin_complete_line2 {
+    /* font */
+    font-size: 25px;
+    color: #707070;
+}
+
+/* login form */
+.login-form {
+    /* size */
+    width: 840px;
+    height: 580px;
+    /* position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* design */
+    background: #FFFFFF;
+    box-shadow: 5px 5px 5px #00000029;
+    border: 1px solid #707070;
+    border-radius: 46px;
+}
+
+.user-input-area {
+    /* position */
+    position: relative;
+    line-height: 100%;
+}
+
+.user-input-area:first-child {
+    /* position */
+    margin-top: 105px;
+    margin-bottom: 18px;
+}
+
+.user-input-area input{
+    /* size */
+    width: 679px;
+    height: 101px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    /* design */
+    background: #E8E8E8;
+    border-radius: 74px;
+    outline:none;
+    /* font */
+    font-size: 25px;
+}
+
+.user-input-area input::placeholder {
+    /* font */
+    font-size: 25px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.login-button button{
+    /* size */
+    width: 679px;
+    height: 119px;
+    /* position */
+    margin-top: 36px;
+    margin-bottom: 105px;
+    /* design */
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 26px;
+    opacity: 1;
+    letter-spacing: 0px;
+    cursor: pointer;
+    /* font */
+    font-size: 25px;
+    color: #333333;
+}
+
+.login-button button:hover {
+    /* design */
+    background: #DD282E;
+    /* font */
+    color: #FFFFFF;
+}
+
+/* footer */
+footer {
+    /* position */
+    margin-top: 150px;
+    /* size */
+    width: 100%;
+    height: 259px;
+    background: #55585A 0% 0% no-repeat padding-box;
+}
+
+#footer-nav {
+    /* size */
+    height: 187px;
+}
+
+#footer-info {
+    /* design */
+    border-top: 1px solid black;
+    /* size */
+    height: 72px;
+}
+
+.footer-info-text {
+    /* position */
+    margin-top: 16px;
+    margin-left: 50px;
+    /* font */
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+}
