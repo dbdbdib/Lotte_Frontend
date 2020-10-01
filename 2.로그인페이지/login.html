@@ -1,46 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>로그인</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-<!--아이디, 비밀번호 입력 + 회원가입 페이지 연결 기능 구현-->
-    <div class = "background"><!--메인에도 백그라운드가 있길래 백그라운드 div를 만들어줬슴다-->
-        <div class = "login-form">
-            <img src="../img/logo.png" class="logo"> <!--로고 들어가는 위치-->
-                <div class = "header">
-                    <form action="">
-                        <div class = "decoration">
-                            LIFETIME VALUE CREATOR, 
-                            <p class = sub> LOTTE</p>
-                            <p> X </p>
-                            BUSAN LIKELION 8th 
-                            <p class = sub> TEAM DOOBOO </p>
-                        </div>
-                        <div class = "int-area"><!--아이디 입력 영역 div class 정의-->
-                            <input type="text" name="id" id="id" 
-                            autocomplete="off" required>
-                            <label for = "id">ID</label>
-                        </div>
-                        <div class = "int-area"><!--패스워드 입력 영역 div class 정의-->
-                            <input type="password" name="pw" id="pw" 
-                            autocomplete="off" required>
-                            <label for = "pw">PW</label>
-                        </div>
-                        <div class = "button-area"><!--로그인 버튼 div class 정의-->
-                            <button type="submit">로그인</button>
-                        </div>
-                        <div class="caption"><!--회원가입 페이지로 연결될 부분-->
-                            <a>아직 회원이 아니신가요? </a><a href="">회원가입</a>
-                        </div>
+    <div class="container"">
+
+        <div class=" header">
+            <a href=""><img src="../img/logo.png" class="logo"></a>
+        </div>
+
+        <!-- 로그인 form -->
+        <div class="login-form">
+            <div class = "collaboration">
+                롯데 X 두부두부 이미지 추가 예정
+            </div>
+            <form action="">
+                <div class="user-input-area">
+                    <!-- 아이디 입력 -->
+                    <input type="text" name="id" id="id" autocomplete="off" size="400" placeholder="ID" required>
+                    <label for="id"></label>
                 </div>
+                <div class="user-input-area">
+                    <!-- 패스워드 입력 -->
+                    <input type="password" name="pw" id="pw" autocomplete="off" size="25" placeholder="PW" required>
+                    <label for="pw"></label>
+                </div>
+                <div class="login-button">
+                    <button type="submit">로그인</button>
+                </div>
+            </form>
+            <div class="caption">
+                <!--회원가입 페이지로 연결될 부분-->
+                아직 회원이 아니신가요?<a href="">회원가입</a>
+            </div>
         </div>
     </div>
-            </form>
-    </section>
-    
 </body>
+
+<footer>
+    <div id="footer-nav">
+        <div class="container"></div>
+    </div>
+    <div id="footer-info">
+        <div class="footer-info-text">
+            Copyright © DOOBOO All Rights reserved.
+        </div>
+    </div>
+</footer>
+
 </html>

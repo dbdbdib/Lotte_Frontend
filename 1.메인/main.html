@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>메인페이지</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <div class = "background">
-        <div class= "header">
+    <div class="background">
+        <div class="header">
+            <div class="empty_div"></div>
             <img src="../img/logo.png" class="logo">
-            <div class="sign-in">
-                회원 가입
-            </div>
-            <div class="login-out">
-                | 로그인
+            <div class="user-interaction-wrap">
+                <div class="login-in"><a href="">로그인</a></div>
+                <div class="sign-in"><a href="">회원 가입</a></div>
             </div>
         </div>
 
@@ -22,12 +23,12 @@
         <div class="content-box">
             <div class="top-box">
                 <div class="select-box" id="select-food">
-                        <!-- <div class="logo-box">
-                            <img src="../img/logo2.png" class="logo2">
-                        </div> -->
-                        <div class="box-text">
-                            식품
-                        </div>
+                    <!-- <div class="logo-box">
+                                <img src="../img/logo2.png" class="logo2">
+                            </div> -->
+                    <div class="box-text">
+                        식품
+                    </div>
                 </div>
                 <div class="select-box" id="select-trans">
                     유통
@@ -35,24 +36,23 @@
             </div>
             <div class="bottom-box">
                 <div class="select-box" id="select-bio">
-                        화학/건설/제조
+                    화학/건설/제조
                 </div>
                 <div class="select-box" id="select-ser">
-                        관광/서비스/금융
+                    관광/서비스/금융
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="footer"> 
-        <div id="footer-nav">
-            <div class="container"></div>
-        </div>
-        <div id="footer-info">
-            <div class="footer-info-text">
-                Copyright © DOOBOO All Rights reserved.
             </div>
         </div>
     </div>
 </body>
+
+<footer>
+    <div id="footer-nav"></div>
+    <div id="footer-info">
+        <div class="footer-info-text">
+            Copyright © DOOBOO All Rights reserved.
+        </div>
+    </div>
+</footer>
+
 </html>
