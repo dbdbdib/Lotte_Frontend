@@ -67,3 +67,26 @@
     font-size: large;
     color: #6F6F6F;;
 }
+
+/* footer */
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 259px;
+    background: #55585A;
+}
+
+#footer-nav {
+    height: 187px;
+}
+#footer-info {
+    border-top: 1px solid black;
+    height: 72px;
+}
+.footer-info-text {
+    margin-top: 16px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 1;
+}
