@@ -80,17 +80,19 @@
     padding-left: 20px;
     /* design */
     background: #E8E8E8;
+    border: none;
     border-radius: 74px;
     outline:none;
     /* font */
     font-size: 25px;
+    color: #333333;
 }
 
 .user-input-area input::placeholder {
     /* font */
     font-size: 25px;
     font-weight: 500;
-    color: #333333;
+    color: #ACACAC;
 }
 
 .login-button button{
