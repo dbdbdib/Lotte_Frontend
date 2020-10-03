@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my_page_info.css">
+</head>
+<body>
+    <div class = "background">
+        <div class= "header">
+            <img src="../img/logo.png" class="logo">
+            <div class="logout-btn">
+                로그아웃
+            </div>
+        </div>
+
+        <div class="board-wrap">
+            <div class="comp-wrap">
+                <div class="comp-list">
+                    <!-- 요기는 나중에 데이터 넣으면 for 문으로 돌아가게 하면 될 듯 -->
+                    <div class="comp-box">
+                        <div class="comp-name" id="name1">
+                            마이페이지
+                        </div>
+                    </div>
+
+                    <div class="comp-box">
+                        <div class="comp-name" id="name2">
+                            내가 쓴 글
+                        </div>
+                    </div>
+
+                    <div class="comp-box">
+                        <div class="comp-name" id="name3">
+                            스크랩한 글
+                        </div>
+                    </div>
+
+                    <div class="comp-box">
+                        <div class="comp-name" id="name3">
+                            정보 수정
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-wrap">
+                <div class="post-box-wrap">
+                <div class="change-title">
+                    정보 수정
+                </div>
+                <hr>
+                <form class="left-box">
+                    <div class="input-box" id="nickname-box">
+                        닉네임
+                        <br>
+                        <input type="text" class="input-text" id="nickname" value="보건교사 안은영">
+                        <input type="submit" class="input-btn" id="duplicate" value="중복 확인">
+                    </div>
+                    <div class="input-box" id="password-box">
+                        비밀번호
+                        <br>
+                        <input type="password" class="input-text" id="password">
+                    </div>
+                    <div class="input-box" id="double-password-box">
+                        비밀번호 재확인
+                        <br>
+                        <input type="password" class="input-text" id="double-password">
+                    </div>
+                </form>
+                <div class="right-box">
+                    <img src="../img/profile.png" class="profile-img">
+                    <br>
+                    <button class="profile-upload-btn">프로필 사진 등록</button>
+                </div>
+                <div>
+                    <button class="finish-btn">수정 완료</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="footer"> 
+        <div id="footer-nav">
+            <div class="container"></div>
+        </div>
+        <div id="footer-info">
+            <div class="footer-info-text">
+                Copyright © DOOBOO All Rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
