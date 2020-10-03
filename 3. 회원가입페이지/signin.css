@@ -1,18 +1,196 @@
 .background {
     margin: 0 auto;
-    width: 1920px;
+    width: 100%;
     background: #FFFFFF;
     opacity: 1;
     /* border: 1px solid blue; */
 }
-.logo {
-    /*Position*/
-    margin-top: 66px;
-    margin-left: 904px;
 
-    /*Design*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    background: #FFFFFF;
+}
+
+/* 네비게이션 바 */
+.nav_bar {
+    display: flex;
+    align-items: center;
+    margin: 66px 45px 0;
+}
+
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
     width: 113px;
     height: 113px;
+    display: block;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 113px;
+    height: 113px;
+    display: block;
+    justify-content: center;
+}
+
+.signin-form {
+    padding-top: 66px;
+    margin-left: 20%;
+}
+.step{
+    display: inline-block ; 
+    top: 435px;
+    width: 110px;
+    height: 110px;
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+    margin:20px;
+    margin-right: 70px;
+    margin-bottom: 60px;
+    /*
+    background: #C83C2B 0% 0% no-repeat padding-box;
+    border-radius: 35px;
     opacity: 1;
+    */
+    
+    /*중앙정렬 하고싶은데 position align 다 center 줘봤는데 꿈쩍도 안해요 흐엉 ㅠㅠㅠㅠ*/
+    border: 3px solid #D5D5D5;
+    border-radius: 35px;
+    opacity: 1;
+}
+.option {
     display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 35%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    font: normal normal normal 23px Apple SD Gothic Neo;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.option:hover {
+    /* design */
+    background:white;
+    margin: 2px black;
+    
+    /* font */
+    color:black;
+    font-style: bold;
+}
+    
+
+.email-input-area {
+    /* position */
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    line-height: 100%;
+}
+
+.email-input-area:first-child {
+    /* position */
+    margin-top: 105px;
+    margin-bottom: 18px;
+}
+
+.email-input-area input{
+    /* size */
+    width: 35%;
+    height: 75px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    text-align: center;
+
+    /* design */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 10px;
+    opacity: 1;
+
+    /* font */
+    font-size: 20px;
+    color: #55585A;
+}
+
+.confirm-mail{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 25%;
+    height: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background: #B7B7B7 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 10px;
+    opacity: 1;
+
+    font: normal normal normal 23px Apple SD Gothic Neo;
+    letter-spacing: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.confirm-mail:hover{    
+    /* font */
+    color:black;
+    font-style: bold;
+
+}
+
+/* footer 길트리빈 갓갓빈님 최고,,,,,,ㅠㅠ 감사합니다 */
+footer {
+    /* position */
+    margin-top: 150px;
+    /* size */
+    width: 100%;
+    height: 259px;
+    background: #55585A 0% 0% no-repeat padding-box;
+}
+
+#footer-nav {
+    /* size */
+    height: 187px;
+}
+
+#footer-info {
+    /* design */
+    border-top: 1px solid black;
+    /* size */
+    height: 72px;
+}
+
+.footer-info-text {
+    /* position */
+    margin-top: 16px;
+    margin-left: 50px;
+    /* font */
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 1;
 }
