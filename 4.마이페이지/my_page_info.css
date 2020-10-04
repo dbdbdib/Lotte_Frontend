@@ -84,15 +84,18 @@
     width: 980px;
 }
 
-/* .right-box {
+.right-box {
     display: inline-block;
-} */
+    /* justify-content: flex-end; */
+}
 
 .input-box {
     font-size: 30px;
 }
 #password, #double-password {
     width: 963px;
+    display: inline-flex;
+    justify-content: flex-start;
 }
 
 .input-text {
@@ -104,6 +107,8 @@
 }
 #nickname {
     width: 781px;
+    display: inline-flex;
+    justify-content: flex-start;
 }
 .input-btn {
     width: 166px;
@@ -118,6 +123,7 @@
 .profile-img {
     width: 304px;
     margin-left: 42px;
+    border: 1px solid;
 }
 
 .profile-upload-btn {
@@ -131,7 +137,9 @@
     background-color: white;
     color: #B7B7B7;
 }
-
+form {
+    display: inline-block;
+}
 .finish-btn {
     position: absolute; left: 50%;
     margin-top: 143px;
