@@ -7,38 +7,35 @@
     <link rel="stylesheet" href="signin.css">
 </head>
 <body>
-<!--현직자/취준생 가입 구분-->
     <div class = "background">
-        <div class="container">
-            <div class="nav_bar">
-              <div class="empty_div"></div>
-              <img src="../img/logo.png" class="logo">
-              <img src=""  class="collaboration"><!--롯데X랔라 이미지 처리...-->
+        <div class="header">
+            <a href=""><img src="../img/logo.png" class="logo"></a>
+            <img src="../img/lotte_dbdb.png" alt="롯데 X두부두부" id="team-introduction">
         </div>
+
+        <div class="process">
+            <div id="signin">회원가입<div class="dot--medium"></div></div>
+            <img src="../img/signin-process-01.png" alt="signin-process-01" class="signin-process">
+        </div>
+        <!-- 회원가입 form -->
         <div class = "signin-form">
-            <div>
-                <h1>회원가입</h1>
-                    <div class = step></div>
-                    <div class = step></div>
-                    <div class = step></div>
-                <h2>가입 구분</h2>
+            <div><!--현직자/취준생 가입 구분해주는 div입니당-->
+                <div class="sub-text">가입 구분</div>
                     <div class = "option">현직자</div>
                     <div class = "option">취업준비생</div>
             </div>
             <p></p>
             <div>
-                <h2>이메일 인증</h2>
+                <div class="sub-text">이메일 인증</div>
                 <div class="email-input-area">
                     <!-- 이메일 입력 -->
-                    <input type="text" name="email" id="email" autocomplete="off" size="400" placeholder="이메일을 입력해주세요" required>
-                    <label for="email">@ lotte.co.kr</label><!--lotte,,,자간 띄워주고 싶은데 spacing이 안먹혀요 흑흑,,,-->
-                </div>
-                <div class="domain-input-area">
-                    <!-- 도메인 입력 -->
-                    <!--히히 토글 거는 법 모르지롱,,,-->
-                </div>
-                <div class = "confirm-mail">인증 메일 발송</div>
+                    <input type="email" name="email" id="email" autocomplete="off" size="400" placeholder="이메일을 입력해주세요" required>
+                    <label for="email"></label>
+                </div> 
+                <button class = "confirm-mail">인증 메일 발송</button>
             </div>
+            <button class="finish-btn">다음 단계</button>
+            <!-- 회원가입 버튼 만들어주기, 인증메일 발송 크기 수정하기 ;v; -->
         </div>
     </div>
 </body>
