@@ -15,11 +15,37 @@
     align-items: center;
 }
 
+.dot--medium {
+    /* size */
+    width: 15px;
+    height: 15px;
+    /* design */
+    background:#da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.dot--small {
+    /* size */
+    width: 10px;
+    height: 10px;
+    /* design */
+    background: #da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 10px;
+}
+
 /* header */
 .header {
     /* position */
     margin-top: 66px;
-    margin-bottom: 85px;
+    margin-bottom: 55px;
 }
 
 .logo {
@@ -34,43 +60,41 @@
     height: 113px;
 }
 
-.team_introduction {
+#team-introduction {
     /* size */
     width: 724px;
     height: 92px;
-    /* position */
-    text-align: center;
-    /* design */
-    background: skyblue;
 }
 
-/* 회원가입 완료 안내 */
-.signin_complete {
+.process {
     /* size */
-    width: 745px;
+    width: 1200px;
     /* position */
-    text-align: center;
-    margin-bottom: 62px;
+    margin-bottom: 40px;
 }
 
-#signin_complete_line1 {
+#signin {
+    /* position */
+    margin-right: auto;
+    margin-bottom: 20px;
     /* font */
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
-    color: #333333;
 }
 
-#signin_complete_line2 {
-    /* font */
-    font-size: 25px;
-    color: #707070;
+.signin-process {
+    /* size */
+    width: 1000px;
+    /* position */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* login form */
 .login-form {
     /* size */
     width: 840px;
-    height: 580px;
     /* position */
     display: flex;
     flex-direction: column;
@@ -82,6 +106,27 @@
     border-radius: 46px;
 }
 
+/* 회원가입 완료 안내 */
+.signin_complete {
+    /* position */
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+#signin_complete_line1 {
+    /* font */
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#signin_complete_line2 {
+    /* font */
+    font-size: 17px;
+    color: #707070;
+}
+
 .user-input-area {
     /* position */
     position: relative;
@@ -90,7 +135,6 @@
 
 .user-input-area:first-child {
     /* position */
-    margin-top: 105px;
     margin-bottom: 18px;
 }
 
@@ -138,7 +182,7 @@
 
 .login-button button:hover {
     /* design */
-    background: #DD282E;
+    background: #da291c;
     /* font */
     color: #FFFFFF;
 }
@@ -146,7 +190,7 @@
 /* footer */
 footer {
     /* position */
-    margin-top: 150px;
+    margin-top: 75px;
     /* size */
     width: 100%;
     height: 259px;

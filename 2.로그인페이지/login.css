@@ -15,6 +15,19 @@
     align-items: center;
 }
 
+.dot--small {
+    /* size */
+    width: 10px;
+    height: 10px;
+    /* design */
+    background: #da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 5px;
+}
+
 /* header */
 .header {
     /* position */
@@ -34,11 +47,16 @@
     justify-content: center;
 }
 
+#team-introduction {
+    /* size */
+    width: 724px;
+    height: 92px;
+}
+
 /* login form */
 .login-form {
     /* size */
     width: 840px;
-    height: 895px;
     /* position */
     display: flex;
     flex-direction: column;
@@ -50,25 +68,24 @@
     border-radius: 46px;
 }
 
-.collaboration{
-    /* size */
-    width: 300px;
-    height: 242px;
+#login {
     /* position */
-    margin-top: 100px;
-    /* design */
-    background-color: skyblue;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    /* font */
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .user-input-area {
     /* position */
-    position: relative;
     line-height: 100%;
 }
 
 .user-input-area:first-child {
     /* position */
-    margin-top: 105px;
     margin-bottom: 18px;
 }
 
