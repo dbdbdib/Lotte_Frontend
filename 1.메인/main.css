@@ -3,29 +3,20 @@
     padding: 0;
 }
 
-.background {
-    margin: 0 auto;
-    width: 100%;
+.container {
+    width: 1400px;
     background: #FFFFFF;
-    opacity: 1;
-    /* border: 1px solid blue; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 /* 헤더 부분 */
 .header {
-    display: flex;
-    align-items: center;
-    margin-top: 66px;
-    flex-shrink: 0;
-}
-
-.header>div {
-    width: 300px;
+    margin-top: 60px;
 }
 
 .logo {
-    /* margin-top: 66px; */
-    /* margin-left: 904px; */
     margin-left: auto;
     margin-right: auto;
     width: 113px;
@@ -36,33 +27,23 @@
 }
 
 .user-interaction-wrap {
-    display: block;
-    overflow: hidden;
+    font-size: 22px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
 }
 
-.login-in {
-    /* cursor: pointer; */
-    /* position: relative;
-    bottom: 56px;
-    left: 576px; */
-    /* width: 90px; */
-    /* height: 36px; */
+.login-in, .sign-in {
     padding: 0 20px;
-    font: normal normal normal 20px/55px Apple SD Gothic Neo;
     display: inline-block;
+    line-height: 23px;
+}
+
+.login-in:hover, .sign-in:hover {
+    font-weight: 600;
 }
 
 .sign-in {
-    /* cursor: pointer; */
-    /* position: relative;
-    bottom: 56px;
-    left: 567px; */
-    /* width: 90px; */
-    /* height: 36px; */
-    padding: 0 20px;
-    font: normal normal normal 20px/55px Apple SD GOthic Neo;
-    display: inline-block;
-    line-height: 20px;
     border-left: 1px solid #000000;
 }
 
@@ -137,42 +118,6 @@
 .business-name {
     margin-top: 50px;
 }
-
-/* 오른쪽 박스 */
-/* #select-trans, #select-ser {
-    margin-left: 54px;
-} */
-/* 밑의 박스 */
-/* .bottom-box {
-    margin-top: 41px;
-} */
-
-/* .box-text {
-    margin: 100px 0px;
-} */
-
-/* 요기부터 온도 올라감 킹받음 */
-/* .logo-box {
-    width: 246px;
-    height: 246px;
-    border: 1px solid red;
-    position: relative;
-    top: 25%;
-    left: 49.46px;
-    background-color: #1D1D1D72;
-} */
-
-/* .logo2 {
-    position: relative;
-    top: 25%;
-    margin-left: 71.04px;
-    width: 103px;
-    height: 109px;
-    border: 1px solid pink;
-    display: inline-block;
-} */
-
-/* 요기까지 */
 
 /*  푸터 부분 */
 footer {
