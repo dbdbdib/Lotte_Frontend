@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,22 +20,15 @@
         <!-- 회원가입 form -->
         <div class = "signin-form">
             <div><!--현직자/취준생 가입 구분해주는 div입니당-->
+                <!--각각 버튼 위에 이미지 추가해주기-->
                 <div class="sub-text">가입 구분</div>
-                    <div class = "option">현직자</div>
-                    <div class = "option">취업준비생</div>
+                    <!-- imcubent img src 추가-->
+                    <button class="option">현직자</button>
+                    <!-- jobseeker img src 추가-->
+                    <button class="option">취업준비생</button>
             </div>
             <p></p>
-            <div>
-                <div class="sub-text">이메일 인증</div>
-                <div class="email-input-area">
-                    <!-- 이메일 입력 -->
-                    <input type="email" name="email" id="email" autocomplete="off" size="400" placeholder="이메일을 입력해주세요" required>
-                    <label for="email"></label>
-                </div> 
-                <button class = "confirm-mail">인증 메일 발송</button>
-            </div>
             <button class="finish-btn">다음 단계</button>
-            <!-- 회원가입 버튼 만들어주기, 인증메일 발송 크기 수정하기 ;v; -->
         </div>
     </div>
 </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 취준생 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보입력</title>
+    <link rel="stylesheet" href="information-0.css">
+</head>
+
+<body>
+    <div class = "container">
+        <div class="header"><!-- 헤더 부분 : 로고, 콜라보 이미지, 회원가입 프로세스 이미지 -->
+            <a href=""><img src="../img/logo.png" class="logo"></a>
+            <img src="../img/lotte_dbdb.png" alt="롯데 X두부두부" id="team-introduction">
+        </div>
+
+        <div class="process">
+            <div id="signin">회원가입<div class="dot--medium"></div></div>
+            <img src="../img/signin-process-02.png" alt="signin-process-02" class="signin-process">   
+        </div>
+            <div class="sub-text">정보 입력</div>
+        <div>
+            <form action=""></form>
+            <div class="user-input-area">
+                <!-- 이름 -->
+                <div class = "input-type">이름</div>
+                <input type="name" name="name" id="name" autocomplete="off" size="400" placeholder="이름" required>
+                <label for="name"></label><p></p>
+                <!-- 닉네임 -->
+                <div class = "input-type">닉네임</div>
+                <input type="nickname" name="nikname" id="nickname" autocomplete="off" size="400" placeholder="닉네임" required>
+                <label for="nickname"></label>
+                <button type="submit" class="input-btn" id="duplicate" value="중복 확인">중복 확인</button><p></p>
+                <!-- 이메일 -->
+                <div class = "input-type">이메일</div>
+                <input type="email" name="nikname" id="nikname" autocomplete="off" size="400" placeholder="이메일" required>
+                <label for="email"></label><p></p>
+                <!-- 비밀번호 -->
+                <div class = "input-type">비밀번호</div>
+                <input type="password" name="password" id="password" autocomplete="off" size="400" placeholder="비밀번호" required>
+                <label for="password"></label><p></p>
+                <!-- 비밀번호 재확인-->
+                <div class = "input-type">비밀번호 재확인</div>
+                <input type="password" name="password-check" id="password-check" autocomplete="off" size="400" placeholder="비밀번호 재확인" required>
+                <label for="password-check"></label><p></p>
+            </div>
+            <button class="finish-btn">회원가입</button>
+        </div>
+</body>
+
+<footer>
+    <div id="footer-nav">
+        <div class="container"></div>
+    </div>
+    <div id="footer-info">
+        <div class="footer-info-text">
+            Copyright © DOOBOO All Rights reserved.
+        </div>
+    </div>
+</footer>
+
+</html>

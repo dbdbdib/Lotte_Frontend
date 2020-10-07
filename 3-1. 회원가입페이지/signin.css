@@ -70,9 +70,9 @@
 }
 
 .signin-form {
+    margin-left: 20%;
+    margin-right: auto;
     padding-top: 66px;
-    margin-left: 25%;
-    margin-right: 5%;
 
 }
 
@@ -95,19 +95,22 @@
 }
 
 .option {
+    /* position */
     display: inline-block;
+
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 35%;
+    
+    width: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-
+    /* font */
     font: normal normal normal 23px Apple SD Gothic Neo;
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
-
+    /* style */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
@@ -115,7 +118,10 @@
 
 }
 
+
 .sub-text{
+    margin-right: auto;
+
     text-align: left;
     font: normal normal bold 50px/55px Apple SD Gothic Neo;
     letter-spacing: 0px;
@@ -127,78 +133,33 @@
 .option:hover {
     /* design */
     background:white;
-    margin: 2px black;
+    margin: 4px black;
     
     /* font */
     color:black;
     font-style: bold;
 }
-    
 
-.email-input-area {
+.finish-btn{/* 회원가입 버튼 */
     /* position */
-    display: inline;
-    line-height: 100%;
-}
-
-.email-input-area:first-child {
-    /* position */
-    margin-top: 105px;
-    margin-bottom: 18px;
-}
-
-.email-input-area input{
-    /* size */
-    width: 50%;
-    height: 60px;
-    box-sizing: border-box;
-    padding-left: 20px;
-    text-align: center;
-
-    /* design */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #B7B7B7;
-    border-radius: 10px;
-    opacity: 1;
-
-    /* font */
-    font-size: 20px;
-    color: #55585A;
-}
-
-.confirm-mail{
-    display: inline;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    text-align: center;
-    background: #B7B7B7 0% 0% no-repeat padding-box;
-    border: 1px solid #B7B7B7;
-    border-radius: 10px;
-    opacity: 1;
-
-    font: normal normal normal 23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: white;
-    cursor: pointer;
-}
-
-.confirm-mail:hover{    
-    /* font */
-    color:black;
-    font-style: bold;
-
-}
-
-.finish-btn {
     position: absolute; left: 40%;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 30px;
     color: rgb(138, 138, 138);
     width: 300px;
     height: 90px;
-    background: #222222 0% 0% no-repeat padding-box;
+    /* style */
+    background: white 0% 0% no-repeat padding-box;
     border: 1px solid #B7B7B7;
     border-radius: 13px;
+}
+
+.finish-btn:hover{/* 회원가입 버튼 hover */
+    color: white;
+    background: #222222 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    cursor: pointer;
+
 }
 
 /* footer 길트리빈 갓갓빈님 최고,,,,,,ㅠㅠ 감사합니다 */
