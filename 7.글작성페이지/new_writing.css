@@ -3,90 +3,110 @@
     padding: 0;
 }
 
-.container {
-    width: 100%;
-    background: #FFFFFF;
+body {
+    position: relative;
 }
 
-/* 네비게이션 바 */
-.nav_bar {
-    display: flex;
-    align-items: center;
-    margin: 66px 45px 0;
-}
-
-.logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 113px;
-    height: 113px;
-    display: block;
-    justify-content: center;
+.dot--medium {
+    /* size */
+    width: 15px;
+    height: 15px;
+    /* design */
+    background:#da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 10px;
 }
 
 /* 게시글 작성 */
-.post-container {
-    padding-top: 66px;
-    margin-left: 45px;
-    margin-right: 45px;
+.pop-up--background {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #55585A;
+    opacity: 0.5;
+    z-index: 9;
+}
+
+.post-box {
+    display: block;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform:translate(-50%, -50%);
+
+    box-sizing: border-box;
+    width: 1000px;
+    height: 700px;
+    background: #FFFFFF;
+    border-radius: 39px;
+    z-index: 99;
+}
+
+.btn-close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.new-writing {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
 }
 
 .post-title {
     font-weight: 600;
-    font-size: x-large;
-    display: inline-block;
-    margin-left: 20px;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 70px;
     margin-bottom: 10px;
 }
 
 .post-content {
+    width: 900px;
     height: 400px;
+    box-sizing: border-box;
     background: #EFEFEF 0% 0% no-repeat padding-box;
     border-radius: 25px;
     padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
     color: #6C6C6C;
+    overflow: auto;
 }
 
 /* 버튼 */
 .btn-wrap {
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     justify-content: space-between;
 }
 
 .btn {
-    width: 200px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background: #FFFFFF;
     box-shadow: 0px 3px 6px #00000029;
+    outline: none;
     border: 1px solid #707070;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     text-align: center;
     letter-spacing: 0px;
-    font-size: large;
     color: #6F6F6F;;
-}
-
-/* footer */
-footer {
-    margin-top: 100px;
-    width: 100%;
-    height: 259px;
-    background: #55585A;
-}
-
-#footer-nav {
-    height: 187px;
-}
-#footer-info {
-    border-top: 1px solid black;
-    height: 72px;
-}
-.footer-info-text {
-    margin-top: 16px;
-    margin-left: 50px;
-    font-size: 20px;
-    color: #FFFFFF;
-    opacity: 1;
 }
