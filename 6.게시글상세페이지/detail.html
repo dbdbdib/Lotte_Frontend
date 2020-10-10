@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>게시글상세페이지</title>
 </head>
 
@@ -50,13 +51,15 @@
             <div class="post-and-comment-container">
                 <div class="post-container">
                     <div class="post-info">
-                        <div class="post-writer">이진트리빈</div>
                         <div class="post-title">안녕하세요 롯데쇼핑 현직자분들께 문의드립니다</div>
                         <div class="post-info-wrap">
-                            <div class="current-time">20. 09. 30 12:00</div>
-                            <div class="view-number">조회수 0</div>
-                            <div class="scrap-number">스크랩 0</div>
-                            <div class="comment-number">댓글 0</div>
+                            <div class="post-writer">이진트리빈</div>
+                            <div class="post-info__right">
+                                <div class="current-time">20. 09. 30 12:00</div>
+                                <div class="view-number">조회수 0</div>
+                                <div class="scrap-number">스크랩 0</div>
+                                <div class="comment-number">댓글 0</div>
+                            </div>
                         </div>
                     </div>
                     <div class="post-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -92,26 +95,21 @@
                     <div class="comment-wrap">
                         <div class="comment-content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
                             consectetur, adipisci velit...</div>
-                        <div class="comment-control-wrap">
-                            <div class="comment-control"><a href="">수정</a></div>
-                            <div class="comment-control"><a href="">삭제</a></div>
-                        </div>
+                        <div class="btn-close">❌</div>
                     </div>
         
                     <div class="comment-writer-username">nsbg</div>
                     <div class="comment-wrap">
                         <div class="comment-content">not silver but gold</div>
-                        <div class="comment-control-wrap">
-                            <div class="comment-control"><a href="">수정</a></div>
-                            <div class="comment-control"><a href="">삭제</a></div>
-                        </div>
+                        <div class="btn-close">❌</div>
                     </div>
         
                     <div class="comment-writing-container">
-                        <div class="comment-writing">
-                            댓글을 작성해주세요
-                        </div>
-                        <button class="btn">댓글 작성</button>
+                        <form action="" id="new-comment-form">
+                            <textarea name="newcomment" id="new-comment" placeholder="300자 이내로 댓글을 입력해주세요" maxlength="400"></textarea>
+                            <label for="new-comment"></label>
+                            <input type="submit" class="btn btn-write" value="댓글 작성">
+                        </form>
                     </div>
                 </div>
             </div>

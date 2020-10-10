@@ -50,7 +50,7 @@ a {
   font-size: 22px;
   position: absolute;
   top: 40px;
-  right: 10px;
+  right: -50px;
 }
 
 .my_page:hover {
@@ -97,13 +97,13 @@ a {
 
 /* 게시글 */
 .post-container {
-  margin-top: 32px;
-  width: 960px;
-  margin-left: 40px;
+  margin-top: 56px;
+  width: 980px;
+  margin-left: 20px;
 }
 
 #post-list__head {
-  width: 940px;
+  width: 960px;
 
   margin-bottom: 10px;
   margin-left: auto;
@@ -125,7 +125,7 @@ a {
 
 .post-box {
   margin: 10px auto;
-  width: 940px;
+  width: 960px;
   height: 50px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -153,7 +153,7 @@ a {
 }
 
 .post-title {
-  width: 360px;
+  width: 380px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -175,25 +175,22 @@ a {
 
 .nickname-logo {
   vertical-align: middle;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 5px;
 }
 
 /* 게시글 작성 버튼 */
 .btn-wrap {
-  width: 960px;
+  width: 980px;
   margin-top: 15px;
   display: flex;
-}
-
-.btn-wrap>a {
-  margin-left: auto;
 }
 
 .btn-create {
   width: 200px;
   height: 50px;
+  margin-left: auto;
   background: #FFFFFF;
   box-shadow: 0px 3px 6px #00000029;
   outline: none;
