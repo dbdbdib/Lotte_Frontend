@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="post.css">
+    <title>글작성페이지</title>
+</head>
+
+<body>
+    <div id="modal">
+        <div id="modal__background"></div>
+
+        <div id="post-container">
+            <div id="btn-close">&#x2715</div> <!-- 닫기 버튼 -->
+            <div class="post-writing-box">
+                <div id="new-writing">글쓰기<div class="dot--medium"></div>
+                </div>
+                <form action="" id="post-writing-form">
+                    <input type="text" placeholder="제목을 입력해주세요" id="post-title" maxlength="42">
+                    <textarea name="post-writing"" id="post-writing" placeholder="내용을 입력해주세요"></textarea>
+                    <label for="post-writing"></label>
+
+                    <div id="btn-wrap">
+                        <button class="btn" id="add-image">사진 추가</button>
+                        <button class="btn" id="post-write">작성 완료</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

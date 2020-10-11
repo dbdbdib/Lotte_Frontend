@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="../../css/게시글상세.css">
+    <link rel="stylesheet" href="../../css/회사목록.css">
+    <link rel="stylesheet" href="../../css/모달-게시글수정.css">
+    <script src="../../js/post-modify-modal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>게시글상세페이지</title>
 </head>
@@ -12,7 +15,7 @@
 <body>
     <div class="container">
         <div id="header">
-            <img src="../img/logo.png" class="logo">
+            <img src="../../img/logo.png" class="logo">
             <span class="my_page"><a href="">마이페이지</a></span>
         </div>
 
@@ -71,11 +74,11 @@
                     </div>
 
                     <div class="image-wrap">
-                        <div class="image"></div>
-                        <div class="image"></div>
-                        <div class="image"></div>
-                        <div class="image"></div>
-                        <div class="image">5+</div>
+                        <a href="" target="_blank"><div class="image"><img src="../../img/profile.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="image"><img src="../../img/lotte_dbdb.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="image"><img src="../../img/imcubent.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="image"><img src="../../img/jobseeker.png" alt=""></div></a>
+                        <a href="" target="_blank"><div class="image"><img src="../../img/logo.png" alt=""></div></a>
                     </div>
 
                     <div class="btn-wrap">
@@ -84,7 +87,7 @@
                             <button class="btn">글 목록</button>
                         </div>
                         <div class="btn--right">
-                            <button class="btn">수정</button>
+                            <button class="btn" id="btn-modify">수정</button>
                             <button class="btn">삭제</button>
                         </div>
                     </div>
@@ -106,15 +109,37 @@
         
                     <div class="comment-writing-container">
                         <form action="" id="new-comment-form">
-                            <textarea name="newcomment" id="new-comment" placeholder="300자 이내로 댓글을 입력해주세요" maxlength="400"></textarea>
+                            <textarea name="newcomment" id="new-comment" placeholder="댓글을 입력해주세요" autocomplete="off"></textarea>
                             <label for="new-comment"></label>
-                            <input type="submit" class="btn btn-write" value="댓글 작성">
+                            <input type="submit" class="btn btn-write" value="댓글 작성" autocomplete="off">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
 
+    </div>
+
+    <div id="modal">
+        <div id="modal__background"></div>
+
+        <div id="post-container">
+            <div id="btn-close">&#x2715</div> <!-- 닫기 버튼 -->
+            <div class="post-writing-box">
+                <div id="new-writing">게시글 수정<div class="dot--medium"></div>
+                </div>
+                <form action="" id="post-writing-form">
+                    <input type="text" placeholder="original title" id="post-title" maxlength="42" autocomplete="off">
+                    <textarea name="post-writing"" id="post-writing" placeholder="original content" autocomplete="off"></textarea>
+                    <label for="post-writing"></label>
+
+                    <div id="btn-wrap">
+                        <button class="btn" id="add-image">사진 추가</button>
+                        <button class="btn" id="post-write">수정 완료</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>

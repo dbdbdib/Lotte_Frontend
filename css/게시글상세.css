@@ -23,7 +23,7 @@ a {
 }
 
 .container {
-    width: 1180px;
+    width: 1200px;
     background: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
@@ -63,41 +63,12 @@ a {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* 회사 리스트 */
-#business-field {
-    font-size: 55px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: right;
-}
-
-.company-list {
-    width: 200px;
-}
-
-.company-box {
-    width: 100%;
-    height: 50px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 5px 5px 5px #00000029;
-    border: 1px solid #707070;
-    border-radius: 11px;
-    opacity: 1;
-    margin-bottom: 20px;
-}
-
-.company-name {
-    margin-top: 13px;
-    margin-bottom: 13px;
-    font-size: 18px;
-    text-align: center;
+    position: relative;
 }
 
 /* 게시글 + 댓글 */
 .post-and-comment-container {
-    width: 980px;
+    width: 1000px;
 }
 
 /* 게시글 */
@@ -152,9 +123,9 @@ a {
 .post-content {
     min-height: 400px;
     background: #EFEFEF 0% 0% no-repeat padding-box;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px 20px;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     color: #6C6C6C;
 }
 
@@ -167,20 +138,19 @@ a {
 }
 
 .image {
-    width: 180px;
-    height: 180px;
-    background: #EFEFEF 0% 0% no-repeat padding-box;
+    width: 185px;
+    height: 185px;
+    /* background: #EFEFEF 0% 0% no-repeat padding-box; */
+    border: 1px solid #efefef;
     border-radius: 15px;
+    text-align: center;
+    line-height: 185px;
 }
 
-.image:last-child{
-    background: #55585A 0% 0% no-repeat padding-box;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-size: 23px;
+.image>img {
+    max-width: 185px;
+    max-height: 185px;
+    object-fit: cover;
 }
 
 /* 버튼 */
@@ -251,7 +221,7 @@ a {
 
 /* 댓글 작성 */
 #new-comment-form {
-    width: 960px;
+    width: 980px;
     display: flex;
     align-items: flex-end;
     margin-top: 50px;
@@ -259,7 +229,7 @@ a {
 }
 
 #new-comment {
-    width: 845px;
+    width: 865px;
     height: 180px;
     resize: none;
     padding: 20px 20px;

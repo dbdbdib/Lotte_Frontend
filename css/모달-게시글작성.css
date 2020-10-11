@@ -1,0 +1,161 @@
+.dot--medium {
+    /* size */
+    width: 15px;
+    height: 15px;
+    /* design */
+    background:#da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+#modal {
+    display: none;
+    position: relative;
+}
+
+#modal.active {
+    display: block;
+}
+
+#modal__background {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #55585A;
+    opacity: 0.8;
+    z-index: 9;
+}
+
+/* 글 작성 */
+/* #post-container {
+    display: none;
+} */
+
+#post-container {
+    display: block;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform:translate(-50%, -50%);
+
+    box-sizing: border-box;
+    width: 1000px;
+    height: 700px;
+    background: #FFFFFF;
+    border-radius: 39px;
+    z-index: 99;
+}
+
+/* modal 닫기 버튼 */
+#btn-close {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* 글 작성 box */
+#post-writing-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#new-writing {
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+/* 글 제목 */
+#post-title {
+    display: block;
+
+    box-sizing: border-box;
+    width: 900px;
+    min-height: 40px;
+
+    margin : 30px auto 10px;
+    padding-left: 20px;
+    border: none;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#post-title:focus {
+    outline: none;
+}
+
+#post-title::placeholder {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* 글 내용 */
+#post-writing {
+    display: block;
+
+    box-sizing: border-box;
+    min-width: 900px;
+    height: 380px;
+    resize: none;
+
+    border: none;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 20px;
+    padding-right: 10px;
+
+    background: #EFEFEF;
+    border-radius: 25px;
+    opacity: 1;
+
+    overflow-y: auto;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+}
+
+#post-writing:focus {
+    outline: none;
+}
+
+/* 버튼 */
+#btn-wrap {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-image, #post-write {
+    width: 120px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    outline: none;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #6F6F6F;;
+}
