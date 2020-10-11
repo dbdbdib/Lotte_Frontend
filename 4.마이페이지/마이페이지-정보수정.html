@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/마이페이지.css">
+    <link rel="stylesheet" href="../css/마이페이지-좌측메뉴.css">
+    <link rel="stylesheet" href="../css/마이페이지-정보수정.css">
+    <title>마이페이지</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="../img/logo.png" class="logo">
+            <span id="logout"><a href="">로그아웃</a></span>
+        </div>
+
+        <div id="layout">
+            <div id="my-page">마이페이지<div class="dot--medium"></div>
+            </div>
+            <div class="menu-list">
+                <a href="">
+                    <div class="menu-box">
+                        <div class="menu-name">내가 쓴 글</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-box">
+                        <div class="menu-name">스크랩한 글</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-box" id="current-menu">
+                        <div class="menu-name">정보 수정</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="post-wrap">
+                <div class="post-box-wrap">
+                    <div id="change-info">정보 수정</div>
+                    <hr class="horizontal-line">
+                    <form class="change-info-form">
+
+                        <div class="input-box" id="name-box">
+                            <div class="input-menu" id="name">이름</div>
+                            <input type="text" class="input-text" id="modify-name" value="정종명">
+                        </div>
+
+                        <div class="input-box" id="nickname-box">
+                            <div class="input-menu" id="nickname">닉네임</div>
+                            <input type="text" class="input-text" id="modify-nickname" value="벤자민">
+                            <input type="submit" class="input-btn" id="duplicattion-check-btn" value="중복확인"
+                                onclick="alert('중복확인')">
+                        </div>
+
+                        <div class="input-box" id="password-box">
+                            <div class="input-menu" id="pass">비밀번호</div>
+                            <input type="password" class="input-text" id="modify-password" placeholder="비밀번호">
+                        </div>
+
+                        <div class="input-box" id="password-check-box">
+                            <div class="input-menu" id="pass-recheck">비밀번호 확인</div>
+                            <input type="password" class="input-text" id="modify-password-check" placeholder="비밀번호 확인">
+                        </div>
+                    </form>
+                    <button id="btn-modify-finish">수정 완료</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div id="footer-nav"></div>
+    <div id="footer-info">
+        <div class="footer-info-text">
+            Copyright © DOOBOO All Rights reserved.
+        </div>
+    </div>
+</footer>
+
+</html>

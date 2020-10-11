@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 20px;
+  color: #ACACAC;
+}
+
+.dot--medium {
+  /* size */
+  width: 15px;
+  height: 15px;
+  /* design */
+  background: #da291c;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  /* position */
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.container {
+  width: 1200px;
+  background: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* 네비게이션 바 */
+#header {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  width: 113px;
+  height: 113px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logout {
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+  position: absolute;
+  top: 40px;
+  right: -50px;
+}
+
+#logout:hover {
+  font-weight: 600;
+}
+
+/* 레이아웃 */
+#layout {
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* 정보 수정 */
+form {
+  display: inline-block;
+}
+
+.post-wrap {
+  display: inline-flex;
+  justify-self: flex-end;
+  /* height: 1099px; */
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+.post-box-wrap {
+  width: 920px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#change-info {
+  align-items: flex-start;
+  font-size: 40px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.horizontal-line {
+  border: 1px solid #D5D5D5;
+  margin-bottom: 15px;
+}
+
+/* 정보 변경 form */
+.input-box {
+  font-size: 23px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-text {
+  padding-left: 15px;
+  height: 45px;
+  border: 1px solid #707070;
+  border-radius: 11px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.input-menu {
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#modify-name, #modify-nickname {
+  width: 400px;
+}
+
+#duplicattion-check-btn {
+  width: 100px;
+  height: 45px;
+  background: #222222 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 11px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#modify-password, #modify-password-check {
+  width: 510px;
+  display: inline-flex;
+  justify-content: flex-start;
+}
+
+#btn-modify-finish {
+  display: block;
+  margin: 60px auto 0;
+  font-size: 22px;
+  color: white;
+  width: 350px;
+  height: 70px;
+  background: #222222 0% 0% no-repeat padding-box;
+  border: 1px solid #B7B7B7;
+  border-radius: 13px;
+}
+
+/* footer */
+footer {
+  margin-top: 145px;
+  width: 100%;
+  height: 259px;
+  background: #55585A;
+}
+
+#footer-nav {
+  height: 187px;
+}
+
+#footer-info {
+  border-top: 1px solid black;
+  height: 72px;
+}
+
+.footer-info-text {
+  margin-top: 16px;
+  margin-left: 50px;
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 1;
+}

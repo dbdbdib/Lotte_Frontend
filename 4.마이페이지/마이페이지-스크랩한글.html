@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/마이페이지.css">
+    <link rel="stylesheet" href="../css/마이페이지-좌측메뉴.css">
+    <title>마이페이지</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="../img/logo.png" class="logo">
+            <span id="logout"><a href="">로그아웃</a></span>
+        </div>
+
+        <div id="layout">
+            <div id="my-page">마이페이지<div class="dot--medium"></div>
+            </div>
+            <div class="menu-list">
+                <a href="">
+                    <div class="menu-box">
+                        <div class="menu-name">내가 쓴 글</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-box" id="current-menu">
+                        <div class="menu-name">스크랩한 글</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="menu-box">
+                        <div class="menu-name">정보 수정</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="post-container">
+                <div id="post-list__head">
+                    <div id="post-writer__head" class="post-writer head">닉네임</div>
+                    <div id="post-title__head" class="post-title head">제목</div>
+                    <div id="post-date__head" class="post-date head">게시 날짜</div>
+                    <div id="post-views__head" class="post-views head">조회수</div>
+                    <div id="post-scrap__head" class="post-scrap head">스크랩</div>
+                    <div id="post-comment__head" class="post-comment head">댓글</div>
+                </div>
+
+                <div id="post-list">
+
+                    <div class="post-box">
+                        <div class="post" id="post1">
+                            <div class="post-writer"><img src="../img/logo.png" class="nickname-logo">현직자 닉네임</div>
+                            <div class="post-title">롯데 취업 꿀팁</div>
+                            <div class="post-date">2020.10.09</div>
+                            <div class="post-views">10000</div>
+                            <div class="post-scrap">30</div>
+                            <div class="post-comment">5</div>
+                        </div>
+                    </div>
+
+                    <div class="post-box">
+                        <div class="post" id="post2">
+                            <div class="post-writer"><img src="../img/logo.png" class="nickname-logo">현직자 닉네임</div>
+                            <div class="post-title">현실적인 롯데 취업 후</div>
+                            <div class="post-date">2020.10.09</div>
+                            <div class="post-views">14000</div>
+                            <div class="post-scrap">20</div>
+                            <div class="post-comment">10</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<footer>
+    <div id="footer-nav"></div>
+    <div id="footer-info">
+        <div class="footer-info-text">
+            Copyright © DOOBOO All Rights reserved.
+        </div>
+    </div>
+</footer>
+
+</html>
