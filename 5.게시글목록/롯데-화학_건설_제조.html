@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/게시글목록.css">
+    <link rel="stylesheet" href="../css/회사목록.css">
+    <link rel="stylesheet" href="../css/모달-게시글작성.css">
+    <script src="../js/post-writing-modal.js"></script>
+    <title>롯데 화학/건설/제조</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="../img/logo.png" class="logo">
+            <span class="my_page"><a href="">마이페이지</a></span>
+        </div>
+
+        <div id="layout">
+            <div id="business-field">화학/건설/제조<div class="dot--medium"></div></div>
+            <div class="company-list">
+                <div class="company-box">
+                    <div class="company-name">롯데엠시시</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데건설</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데CM사업본부</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데기공</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데알미늄</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데정밀화학</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데케미칼</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데비피화학</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">캐논코리아비즈니스솔루션</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">케이피켐텍</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">한국후지필름</div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div id="post-list__head">
+                    <div id="post-writer__head" class="post-writer head">닉네임</div>
+                    <div id="post-title__head" class="post-title head">제목</div>
+                    <div id="post-date__head" class="post-date head">게시 날짜</div>
+                    <div id="post-views__head" class="post-views head">조회수</div>
+                    <div id="post-scrap__head" class="post-scrap head">스크랩</div>
+                    <div id="post-comment__head" class="post-comment head">댓글</div>
+                </div>
+
+                <div id="post-list">
+
+                    <div class="post-box">
+                        <div class="post" id="post1">
+                            <div class="post-writer">현트리빈</div>
+                            <div class="post-title">가붕이가 최고야</div>
+                            <div class="post-date">2020.10.09</div>
+                            <div class="post-views">10000</div>
+                            <div class="post-scrap">30</div>
+                            <div class="post-comment">5</div>
+                        </div>
+                    </div>
+
+                    <div class="post-box">
+                        <div class="post" id="post2">
+                            <div class="post-writer"><img src="../img/logo.png" class="nickname-logo">nsbg</div>
+                            <div class="post-title">not silver but gold</div>
+                            <div class="post-date">2020.10.09</div>
+                            <div class="post-views">14000</div>
+                            <div class="post-scrap">20</div>
+                            <div class="post-comment">10</div>
+                        </div>
+                    </div>
+
+                    <div class="post-box">
+                        <div class="post" id="post2">
+                            <div class="post-writer">벤자민</div>
+                            <div class="post-title">제목 글자 수가 많을 경우 테스트 중 제목 글자 수가 많을 경우 테스트 중 제목 글자 수가 많을 경우 테스트 중</div>
+                            <div class="post-date">2020.10.09</div>
+                            <div class="post-views">1</div>
+                            <div class="post-scrap">2</div>
+                            <div class="post-comment">10</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="btn-create-wrap">
+                    <button id="btn-create">게시글 작성</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 글 작성 pop-up -->
+    <div id="modal">
+        <div id="modal__background"></div>
+
+        <div id="post-container">
+            <div id="btn-close">&#x2715</div> <!-- 닫기 버튼 -->
+            <div class="post-writing-box">
+                <div id="new-writing">글쓰기<div class="dot--medium"></div>
+                </div>
+                <form action="" id="post-writing-form">
+                    <input type="text" placeholder="제목을 입력해주세요" id="post-title" maxlength="42" autocomplete="off">
+                    <textarea name="post-writing"" id="post-writing" placeholder="내용을 입력해주세요" autocomplete="off"></textarea>
+                    <label for="post-writing"></label>
+
+                    <div id="btn-wrap">
+                        <button class="btn" id="add-image">사진 추가</button>
+                        <button class="btn" id="post-write">작성 완료</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div id="footer-nav"></div>
+    <div id="footer-info">
+        <div class="footer-info-text">
+            Copyright © DOOBOO All Rights reserved.
+        </div>
+    </div>
+</footer>
+
+</html>

@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./post-list.css">
-    <title>게시글목록페이지</title>
+    <link rel="stylesheet" href="../css/게시글목록.css">
+    <link rel="stylesheet" href="../css/회사목록.css">
+    <link rel="stylesheet" href="../css/모달-게시글작성.css">
+    <script src="../js/post-writing-modal.js"></script>
+    <title>롯데 유통</title>
 </head>
 
 <body>
@@ -16,39 +19,47 @@
         </div>
 
         <div id="layout">
+            <div id="business-field">유통<div class="dot--medium"></div></div>
             <div class="company-list">
-                <div id="business-field">식품<div class="dot--medium"></div></div>
                 <div class="company-box">
-                    <div class="company-name">롯데제과</div>
+                    <div class="company-name">롯데백화점</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데푸드</div>
+                    <div class="company-name">롯데마트</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데칠성음료</div>
+                    <div class="company-name">롯데슈퍼</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데 푸드</div>
+                    <div class="company-name">코리아세븐</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데 네슬레</div>
+                    <div class="company-name">롯데하이마트</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데 아사히주류</div>
+                    <div class="company-name">롯데홈쇼핑</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데 유통사업 본부</div>
+                    <div class="company-name">롯데쇼핑 e커머스</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데 중앙 연구소</div>
+                    <div class="company-name">롭스</div>
                 </div>
                 <div class="company-box">
-                    <div class="company-name">롯데 지알에스</div>
+                    <div class="company-name">롯데멤버스</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데컬처웍스</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">에프알엘코리아</div>
+                </div>
+                <div class="company-box">
+                    <div class="company-name">롯데상사</div>
                 </div>
             </div>
-    
+
             <div class="post-container">
-                <!--이거 간격 같게 어케 하나요...??-->
                 <div id="post-list__head">
                     <div id="post-writer__head" class="post-writer head">닉네임</div>
                     <div id="post-title__head" class="post-title head">제목</div>
@@ -59,7 +70,7 @@
                 </div>
 
                 <div id="post-list">
-                    
+
                     <div class="post-box">
                         <div class="post" id="post1">
                             <div class="post-writer">현트리빈</div>
@@ -71,7 +82,7 @@
                         </div>
                     </div>
 
-                    <div class="post-box">  
+                    <div class="post-box">
                         <div class="post" id="post2">
                             <div class="post-writer"><img src="../img/logo.png" class="nickname-logo">nsbg</div>
                             <div class="post-title">not silver but gold</div>
@@ -82,7 +93,7 @@
                         </div>
                     </div>
 
-                    <div class="post-box">  
+                    <div class="post-box">
                         <div class="post" id="post2">
                             <div class="post-writer">벤자민</div>
                             <div class="post-title">제목 글자 수가 많을 경우 테스트 중 제목 글자 수가 많을 경우 테스트 중 제목 글자 수가 많을 경우 테스트 중</div>
@@ -95,12 +106,35 @@
 
                 </div>
 
-                <div class="btn-wrap">
-                    <button class="btn-create">게시글 작성</button>
+                <div id="btn-create-wrap">
+                    <button id="btn-create">게시글 작성</button>
                 </div>
             </div>
         </div>
 
+    </div>
+
+    <!-- 글 작성 pop-up -->
+    <div id="modal">
+        <div id="modal__background"></div>
+
+        <div id="post-container">
+            <div id="btn-close">&#x2715</div> <!-- 닫기 버튼 -->
+            <div class="post-writing-box">
+                <div id="new-writing">글쓰기<div class="dot--medium"></div>
+                </div>
+                <form action="" id="post-writing-form">
+                    <input type="text" placeholder="제목을 입력해주세요" id="post-title" maxlength="42" autocomplete="off">
+                    <textarea name="post-writing"" id="post-writing" placeholder="내용을 입력해주세요" autocomplete="off"></textarea>
+                    <label for="post-writing"></label>
+
+                    <div id="btn-wrap">
+                        <button class="btn" id="add-image">사진 추가</button>
+                        <button class="btn" id="post-write">작성 완료</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>
