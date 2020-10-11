@@ -1,0 +1,77 @@
+#user-input-area-wrap {
+    width: 1000px;
+    height: 470px;
+    position: relative;
+}
+
+#name-wrap {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+#nickname-wrap {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+
+#email-wrap {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+#business-field-wrap {
+    position: absolute;
+    top: 220px;
+    left: 172px;
+}
+
+#password-wrap {
+    position: absolute;
+    top: 290px;
+    left: 180px;
+}
+
+#password-check-wrap {
+    position: absolute;
+    top: 360px;
+    left: 130px;
+}
+
+/* 계열 선택 */
+#business-field {
+    width: 500px;
+    height: 45px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    outline: none;
+    color: #707070;
+    font-size: 16px;
+}
+
+/*정보입력 항목 네이밍*/
+.input-type{
+    margin-right: 10px;
+    line-height: 45px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222222;
+}
+
+/* 닉네임 중복확인 버튼*/
+.input-btn {
+    width: 100px;
+    height: 45px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    background: #222222 0% 0% no-repeat padding-box;
+    border: 1px solid #222222;
+    border-radius: 11px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}

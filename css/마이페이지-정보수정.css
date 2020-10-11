@@ -165,6 +165,8 @@ form {
   background: #222222 0% 0% no-repeat padding-box;
   border: 1px solid #B7B7B7;
   border-radius: 13px;
+  outline: none;
+  cursor: pointer;
 }
 
 /* footer */

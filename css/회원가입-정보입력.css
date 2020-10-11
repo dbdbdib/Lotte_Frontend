@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+button {
+    outline: none;
+}
+
 /* ----------------------------------header start---------------------------------- */
 .header {/* 헤더 전체 */
     /* position */
@@ -84,9 +88,7 @@
 
 .sub-text{/* '정보 입력'글자 */
     /* position */
-    padding-top: 30px;
     padding-bottom: 15px;
-    margin-left: 20%;
     margin-right: auto;
     /* font */
     text-align: left;
@@ -95,43 +97,104 @@
     color: #333333;
 }
 
-.user-input-area:first-child {
-    /* position */
-    margin-bottom: 18px;
+.horizontal-line {
+    border: 1px solid #D5D5D5;
+    margin-bottom: 15px;
+  }
+
+#user-input-area-wrap {
+    width: 1000px;
+    height: 400px;
+    position: relative;
 }
 
-.user-input-area input{
+.input-wrap {
+    display: flex;
+}
+
+#name-wrap {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+#nickname-wrap {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+
+#email-wrap {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+#password-wrap {
+    position: absolute;
+    top: 220px;
+    left: 180px;
+}
+
+#password-check-wrap {
+    position: absolute;
+    top: 290px;
+    left: 130px;
+}
+
+#user-input-area input{
     /* size */
-    width: 395px;
-    height: 44px;
+    width: 500px;
+    height: 45px;
+    line-height: 45px;
     box-sizing: border-box;
-    padding-left: 20px;
+    padding-left: 15px;
     margin-bottom: 15px;/* 아래 입력칸과의 간격 */
 
     /* design */
     border: 1px solid #707070;
     border-radius: 10px;
+    outline: none;
 
     /* font */
-    font-size: 15px;
+    color: #707070;
+    font-size: 16px;
 }
 
-.input-type{/*정보입력 항목 네이밍*/
+/*정보입력 항목 네이밍*/
+.input-type{
     margin-right: 10px;
-    display: inline-block;
-    font: normal normal medium 22px/38px Apple SD Gothic Neo;
-    letter-spacing: 0px;
+    line-height: 45px;
+    font-size: 22px;
+    font-weight: 600;
     color: #222222;
 }
 
-.finish-btn{/* 회원가입 버튼 */
+/* 닉네임 중복확인 버튼*/
+.input-btn {
+    width: 100px;
+    height: 45px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    background: #222222 0% 0% no-repeat padding-box;
+    border: 1px solid #222222;
+    border-radius: 11px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 회원가입 버튼 */
+#btn-signin {
+    display: block;
     /* position */
-    position: absolute; left: 40%;
-    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
     color: rgb(138, 138, 138);
     width: 300px;
-    height: 90px;
+    height: 70px;
+    line-height: 70px;
 
     /* style */
     background: white 0% 0% no-repeat padding-box;
@@ -139,7 +202,7 @@
     border-radius: 13px;
 }
 
-.finish-btn:hover{/* 회원가입 버튼 hover */
+#btn-signin:hover{/* 회원가입 버튼 hover */
     color: white;
     background: #222222 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
@@ -147,22 +210,10 @@
     cursor: pointer;
 }
 
-.input-btn {/* 닉중복확인 버튼*/
-    width: 100px;
-    height: 42px;
-    padding-top: auto;
-    padding-bottom: auto;
-    background: #222222 0% 0% no-repeat padding-box;
-    border: 1px solid #222222;
-    border-radius: 11px;
-    color: white;
-    font-size: 15px;
-}
-
 /* ----------------------------------under all : footer---------------------------------- */
 footer {
     /* position */
-    margin-top: 250px;
+    margin-top: 150px;
     /* size */
     width: 100%;
     height: 259px;

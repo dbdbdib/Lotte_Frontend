@@ -125,6 +125,7 @@
     opacity: 1;
     letter-spacing: 0px;
     cursor: pointer;
+    outline: none;
     /* font */
     font-size: 30px;
     color: #333333;
@@ -192,7 +193,7 @@ footer {
     margin-top: 16px;
     margin-left: 50px;
     /* font */
-    font-size: 15px;
+    font-size: 16px;
     color: #FFFFFF;
     opacity: 1;
 }

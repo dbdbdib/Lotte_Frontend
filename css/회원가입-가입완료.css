@@ -1,9 +1,10 @@
-.background {
-    /*
-    margin: 0 auto;
-    opacity: 1;
-     border: 1px solid blue; */
+/* setting */
+* {
+    margin: 0;
+    padding: 0;
+}
 
+.container {
     /* size */
     width: 100%;
     /* design */
@@ -12,16 +13,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 100%;
-    background: #FFFFFF;
 }
 
 .dot--medium {
@@ -37,12 +28,25 @@
     margin-left: 10px;
 }
 
+.dot--small {
+    /* size */
+    width: 10px;
+    height: 10px;
+    /* design */
+    background: #da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* header */
 .header {
     /* position */
     margin-top: 66px;
     margin-bottom: 55px;
 }
-
 
 .logo {
     /* position */
@@ -69,17 +73,10 @@
     margin-bottom: 40px;
 }
 
-.signin-form {
-    margin-left: 20%;
-    margin-right: auto;
-    padding-top: 66px;
-
-}
-
 #signin {
     /* position */
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     /* font */
     font-size: 55px;
     font-weight: bold;
@@ -94,78 +91,84 @@
     margin-right: auto;
 }
 
-.option {
+/* login form */
+.signin-complete-wrap {
+    /* size */
+    width: 840px;
     /* position */
-    display: inline-block;
-
-    margin-top: 20px;
-    margin-bottom: 40px;
-    
-    width: 500px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    /* font */
-    font: normal normal normal 23px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #707070;
-    opacity: 1;
-    /* style */
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
-    opacity: 1;
-    cursor: pointer;
-
-}
-
-
-.sub-text{
-    margin-right: auto;
-
-    text-align: left;
-    font: normal normal bold 50px/55px Apple SD Gothic Neo;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
-
-}
-
-.option:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* design */
-    background:white;
-    margin: 4px black;
-    
-    /* font */
-    color:black;
-    font-style: bold;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 5px #00000029;
+    border: 1px solid #707070;
+    border-radius: 46px;
 }
 
-.finish-btn{/* 회원가입 버튼 */
+/* 회원가입 완료 안내 */
+#email-icon {
     /* position */
-    position: absolute; left: 40%;
-    margin-top: 50px;
-    font-size: 30px;
-    color: rgb(138, 138, 138);
-    width: 300px;
+    margin: 50px auto 50px;
+}
+
+#email-icon>img {
+    width: 94px;
+}
+
+.signin_complete {
+    /* text */
+    text-align: center;
+}
+
+.text.bold {
+    /* font */
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    /* position */
+    margin-bottom: 20px;
+}
+.text.medium {
+    /* font */
+    font-size: 19px;
+    color: #707070;
+}
+
+.back-to-main {
+    margin-top: 70px;
+    margin-bottom: 55px;
+}
+
+.btn{
+    /* size */
+    width: 500px;
     height: 90px;
-    /* style */
-    background: white 0% 0% no-repeat padding-box;
-    border: 1px solid #B7B7B7;
-    border-radius: 13px;
-}
-
-.finish-btn:hover{/* 회원가입 버튼 hover */
-    color: white;
-    background: #222222 0% 0% no-repeat padding-box;
-    border-radius: 13px;
+    box-sizing: border-box;
+    /* design */
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 26px;
+    opacity: 1;
+    letter-spacing: 0px;
+    outline: none;
     cursor: pointer;
-
+    /* font */
+    font-size: 25px;
+    color: #333333;
 }
 
-/* footer 길트리빈 갓갓빈님 최고,,,,,,ㅠㅠ 감사합니다 */
+.btn:hover {
+    /* design */
+    background: #000000;
+    /* font */
+    color: #FFFFFF;
+}
+
+/* footer */
 footer {
     /* position */
-    margin-top: 250px;
+    margin-top: 100px;
     /* size */
     width: 100%;
     height: 259px;

@@ -1,0 +1,216 @@
+.background {
+    /*
+    margin: 0 auto;
+    opacity: 1;
+     border: 1px solid blue; */
+
+    /* size */
+    width: 100%;
+    /* design */
+    background: #FFFFFF;
+    /* position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none;
+}
+
+/* -------------------- */
+
+.container {
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.dot--medium {
+    /* size */
+    width: 15px;
+    height: 15px;
+    /* design */
+    background:#da291c;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    /* position */
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header {
+    /* position */
+    margin-top: 66px;
+    margin-bottom: 55px;
+}
+
+
+.logo {
+    /* position */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: center;
+    /* size */
+    width: 113px;
+    height: 113px;
+}
+
+#team-introduction {
+    /* size */
+    width: 724px;
+    height: 92px;
+}
+
+.process {
+    /* size */
+    width: 1200px;
+    /* position */
+    margin-bottom: 40px;
+}
+
+#signin {
+    /* position */
+    margin-right: auto;
+    margin-bottom: 20px;
+    /* font */
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.signin-process {
+    /* size */
+    width: 1000px;
+    /* position */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 회원가입 form */
+.signin-form {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 66px;
+}
+
+.signin-classification {
+    margin-right: auto;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+#signin-option-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.signin-option {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.signin-option:first-child {
+    margin-right: 10px;
+}
+
+#lotte-staff-img, #jobseeker-img {
+    display: block;
+    width: 130px;
+    height: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+.btn-option {
+    /* position */
+    display: block;
+
+    margin-top: 20px;
+    
+    box-sizing: border-box;
+    width: 450px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /* font */
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    /* style */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.finish-btn{/* 회원가입 버튼 */
+    display: block;
+    width: 350px;
+    height: 70px;
+
+    /* position */
+    margin: 40px auto 0;
+
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(138, 138, 138);
+    
+    /* style */
+    background: white 0% 0% no-repeat padding-box;
+    border: 1px solid #B7B7B7;
+    border-radius: 13px;
+}
+
+.finish-btn:hover{/* 회원가입 버튼 hover */
+    color: white;
+    background: #222222 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    cursor: pointer;
+
+}
+
+/* footer 길트리빈 갓갓빈님 최고,,,,,,ㅠㅠ 감사합니다 */
+footer {
+    /* position */
+    margin-top: 100px;
+    /* size */
+    width: 100%;
+    height: 259px;
+    background: #55585A 0% 0% no-repeat padding-box;
+}
+
+#footer-nav {
+    /* size */
+    height: 187px;
+}
+
+#footer-info {
+    /* design */
+    border-top: 1px solid black;
+    /* size */
+    height: 72px;
+}
+
+.footer-info-text {
+    /* position */
+    margin-top: 16px;
+    margin-left: 50px;
+    /* font */
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 1;
+}
